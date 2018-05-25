@@ -18,6 +18,8 @@ class Number
     array_number.each.with_index do |to_numerals, index|
       if index == array_number.length - 1
         final_result <<  ones.fetch(to_numerals)
+      elsif index == array_number.length - 2
+        final_result << tens.fetch(to_numerals)    
       end
     end
     final_result.join
