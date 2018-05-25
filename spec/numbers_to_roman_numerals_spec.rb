@@ -18,4 +18,16 @@ describe('Numbers_to_roman_numerals') do
     number = Number.new()
     expect(number.to_roman_numerals(3292)).to eq('MMMCCXCII')
   end
+  it('changes a three digit number with zeros to roman numerals') do
+    number = Number.new()
+    expect(number.to_roman_numerals(300)).to eq('CCC')
+  end
+  it('can handle a zeros') do
+    number = Number.new()
+    expect(number.to_roman_numerals(000)).to eq('')
+  end
+  it('changes a four digit number with zeros to roman numerals') do
+    number = Number.new()
+    expect(number.to_roman_numerals(3500)).to eq('MMMD')
+  end
 end
