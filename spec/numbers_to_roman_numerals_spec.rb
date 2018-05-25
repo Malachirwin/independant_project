@@ -10,4 +10,8 @@ describe('Numbers_to_roman_numerals') do
     number = Number.new()
     expect(number.to_roman_numerals(43)).to eq('XLIII')
   end
+  it('changes a three digit number to roman numerals') do
+    number = Number.new()
+    expect(number.to_roman_numerals(629)).to eq('DCXXIX')
+  end
 end

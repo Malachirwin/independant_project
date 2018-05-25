@@ -19,7 +19,9 @@ class Number
       if index == array_number.length - 1
         final_result <<  ones.fetch(to_numerals)
       elsif index == array_number.length - 2
-        final_result << tens.fetch(to_numerals)    
+        final_result << tens.fetch(to_numerals)
+      elsif index == array_number.length - 3
+        final_result << hundreds.fetch(to_numerals)
       end
     end
     final_result.join
